@@ -5,8 +5,11 @@ import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
 import Toolbar from '@mui/material/Toolbar';
+import { useNavigate } from 'react-router-dom';
 
 export const Navbar: React.FC = () => {
+	const navigate = useNavigate();
+
 	return (
 		<Box sx={{ flexGrow: 1, height: '10vh' }}>
 			<AppBar
@@ -30,6 +33,7 @@ export const Navbar: React.FC = () => {
 						color="inherit"
 						aria-label="menu"
 						sx={{ mr: 2 }}
+						onClick={() => navigate('/')}
 					>
 						<Home />
 					</IconButton>
@@ -48,6 +52,7 @@ export const Navbar: React.FC = () => {
 									backgroundColor: '#ffffff1b',
 								},
 							}}
+							onClick={() => navigate('/projetos')}
 						>
 							Projetos
 						</Button>

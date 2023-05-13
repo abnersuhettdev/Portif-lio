@@ -22,13 +22,14 @@ export const ProjectCard: React.FC<ICardProjeto> = ({
 	repositorio,
 	techs,
 }) => {
-	// const navigate = useNavigate();
-
 	return (
 		<Card
 			sx={{
 				bgcolor: '#222525',
 				color: '#ffff',
+				height: 420,
+				maxWidth: '300px',
+				position: 'relative',
 			}}
 		>
 			<CardMedia sx={{ height: 200 }} image={img} title={nome} />
@@ -58,7 +59,7 @@ export const ProjectCard: React.FC<ICardProjeto> = ({
 					))}
 				</Grid>
 			</CardContent>
-			<CardActions>
+			<CardActions sx={{ position: 'absolute', bottom: 0, right: 0 }}>
 				<Button
 					variant="outlined"
 					sx={{
@@ -70,14 +71,14 @@ export const ProjectCard: React.FC<ICardProjeto> = ({
 						},
 					}}
 					size="small"
-					onClick={() => console.log(deploy)}
+					onClick={() => window.open(deploy, '_blank')}
 				>
 					Deploy
 				</Button>
 				<Button
 					variant="contained"
 					size="small"
-					onClick={() => console.log(repositorio)}
+					onClick={() => window.open(repositorio, '_blank')}
 				>
 					Repositório
 				</Button>
