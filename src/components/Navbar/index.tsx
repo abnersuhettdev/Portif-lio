@@ -69,6 +69,12 @@ export const Navbar: React.FC = () => {
 										'linear-gradient(90deg, #00D9F5 0%, #7678ED 100%)',
 								},
 							}}
+							onClick={() =>
+								window.open(
+									'https://api.whatsapp.com/send?phone=5524993129149&text=Ol%C3%A1!',
+									'_blank',
+								)
+							}
 						>
 							Contato
 						</Button>

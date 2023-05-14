@@ -1,6 +1,7 @@
 import { Box, Button, Container, Grid, Typography } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
 
+import curriculo from '../public/assets/Abner+Resume+.pdf';
 import githubIcon from '../public/assets/icons/github.png';
 import linkedinIcon from '../public/assets/icons/linkedin.svg';
 import mailIcon from '../public/assets/icons/mail.png';
@@ -93,7 +94,7 @@ export const Home = () => {
 							display={'flex'}
 							marginX="auto"
 							component={'img'}
-							borderRadius={'50%'}
+							borderRadius={'2%'}
 							src={profile}
 							boxShadow={'-2px 2px 48px 10px rgba(0,0,0,0.75)'}
 						></Box>
@@ -128,11 +129,7 @@ export const Home = () => {
 								color: '#ffffff9e',
 							}}
 						>
-							Lorem ipsum dolor sit amet consectetur adipisicing
-							elit. Dolor sint sit dolorem ipsa officia, hic amet
-							ipsam consequuntur praesentium voluptatem maxime
-							animi illum blanditiis, deserunt inventore veritatis
-							asperiores. Nemo, dolores.
+							Um jovem desenvolvedor, Bem vindo ao meu portifólio!
 						</Typography>
 					</Grid>
 				</Grid>
@@ -144,6 +141,7 @@ export const Home = () => {
 							component={'h3'}
 							marginLeft={'14px'}
 							fontWeight={'bold'}
+							marginBottom={1}
 						>
 							Sobre mim
 						</Typography>
@@ -155,13 +153,33 @@ export const Home = () => {
 							}}
 						>
 							<Typography variant="body1" component={'p'}>
-								Lorem, ipsum dolor sit amet consectetur
-								adipisicing elit. Dolorem consequatur in neque
-								velit consequuntur? Architecto sed nemo dolor
-								odit, explicabo assumenda perferendis!
-								Reiciendis molestias suscipit sunt qui commodi.
-								Non, numquam!
+								Estudante de tecnologia, cursando Análise e
+								desenvolvimento de sistemas, tenho 22 anos e
+								estou em processo de início de carreira, venho
+								aprendendo as tecnologias essenciais de um web
+								developer enquanto compartilho o conhecimento
+								que venho adquirindo através de projetos
+								próprios, busco minha primeira experiência no
+								mercado tech.
 							</Typography>
+							<Button
+								sx={{
+									marginTop: 2,
+									color: 'white',
+									borderColor: 'white',
+
+									'&:hover': {
+										color: '#7678ED',
+										borderColor: '#7678ed',
+									},
+								}}
+								href={curriculo}
+								variant="outlined"
+								type="download"
+								size="small"
+							>
+								Baixar CV
+							</Button>
 						</Box>
 					</Grid>
 				</Grid>

@@ -56,7 +56,7 @@ const projetos = [
 	},
 ];
 
-export const Projetos = () => {
+export const Projetos: React.FC = () => {
 	return (
 		<>
 			<Navbar />
