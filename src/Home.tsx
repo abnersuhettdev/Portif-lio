@@ -187,7 +187,7 @@ export const Home = () => {
 				<Grid
 					container
 					color={'#ffff'}
-					gap={4}
+					gap={5}
 					display={'flex'}
 					justifyContent={'center'}
 					alignItems={'center'}
@@ -204,7 +204,15 @@ export const Home = () => {
 					</Grid>
 
 					{projetos.map((projeto) => (
-						<Grid key={projeto.nome} item xs={12} sm={4} md={3}>
+						<Grid
+							key={projeto.nome}
+							item
+							xs={12}
+							display={'flex'}
+							justifyContent={'center'}
+							sm={4}
+							md={3}
+						>
 							<ProjectCard
 								nome={projeto.nome}
 								techs={projeto.techs}

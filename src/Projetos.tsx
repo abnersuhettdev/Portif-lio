@@ -69,7 +69,15 @@ export const Projetos: React.FC = () => {
 					justifyContent={'center'}
 				>
 					{projetos.map((projeto) => (
-						<Grid key={projeto.nome} item xs={12} sm={6} md={3}>
+						<Grid
+							key={projeto.nome}
+							display={'flex'}
+							justifyContent={'center'}
+							item
+							xs={12}
+							sm={6}
+							md={3}
+						>
 							<ProjectCard
 								nome={projeto.nome}
 								techs={projeto.techs}

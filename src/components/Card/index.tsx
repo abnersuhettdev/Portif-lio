@@ -28,6 +28,7 @@ export const ProjectCard: React.FC<ICardProjeto> = ({
 				bgcolor: '#222525',
 				color: '#ffff',
 				height: 420,
+				width: '400px',
 				maxWidth: '300px',
 				position: 'relative',
 			}}
