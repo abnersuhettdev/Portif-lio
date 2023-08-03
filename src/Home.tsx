@@ -1,50 +1,62 @@
 import { Box, Button, Container, Grid, Typography } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
 
-import curriculo from '../public/assets/Abner+Resume+.pdf';
-import githubIcon from '../public/assets/icons/github.png';
-import linkedinIcon from '../public/assets/icons/linkedin.svg';
-import mailIcon from '../public/assets/icons/mail.png';
-import profile from '../public/assets/Perfil.jpeg';
+import curriculo from './assets/Abner+Resume+.pdf';
+import githubIcon from './assets/icons/github.png';
+import linkedinIcon from './assets/icons/linkedin.svg';
+import mailIcon from './assets/icons/mail.png';
+import profile from './assets/Perfil.jpeg';
+import calculatorImg from './assets/projetos/calculadora.png';
+import doItimg from './assets/projetos/do-it.png';
+import lawyersImg from './assets/projetos/Lawyers.png';
+import gitIcon from './assets/skills/git.png';
+import jsIcon from './assets/skills/javascript.png';
+import muiIcon from './assets/skills/mui.png';
+import nodeIcon from './assets/skills/node.png';
+import psqlIcon from './assets/skills/Postgres.png';
+import reactIcon from './assets/skills/React.png';
+import reduxIcon from './assets/skills/Redux.png';
+import scIcon from './assets/skills/styled-components.png';
+import tsIcon from './assets/skills/Typescript.png';
 import { ProjectCard } from './components/Card';
 import { Navbar } from './components/Navbar';
 import { Skill } from './components/Skills';
 
 const skills = [
 	{
-		img: '../public/assets/skills/javascript.png',
+		img: jsIcon,
 		caption: 'Javascript',
 	},
 	{
-		img: '../public/assets/skills/Typescript.png',
+		img: tsIcon,
 		caption: 'Typescript',
 	},
 	{
-		img: '../public/assets/skills/React.png',
+		img: reactIcon,
 		caption: 'React',
 	},
 	{
-		img: '../public/assets/skills/mui.png',
+		img: muiIcon,
 		caption: 'Material UI',
 	},
 	{
-		img: '../public/assets/skills/styled-components.png',
+		img: scIcon,
 		caption: 'Styled Components',
 	},
 	{
-		img: '../public/assets/skills/Redux.png',
+		img: reduxIcon,
 		caption: 'Redux',
 	},
 	{
-		img: '../public/assets/skills/Postgres.png',
+		img: psqlIcon,
 		caption: 'Postgres',
 	},
 	{
-		img: '../public/assets/skills/node.png',
+		img: nodeIcon,
 		caption: 'Node',
 	},
 	{
-		img: '../public/assets/skills/git.png',
+		img: gitIcon,
 		caption: 'Git',
 	},
 ];
@@ -53,21 +65,21 @@ const projetos = [
 	{
 		nome: 'Do It!',
 		techs: ['HTML', 'CSS', 'Javascript', 'GIT E GITHUB'],
-		img: '../public/assets/projetos/do-it.png',
+		img: doItimg,
 		deploy: 'https://abnersuhettdev.github.io/Criador-de-Notas/',
 		repositorio: 'https://github.com/abnersuhettdev/Criador-de-Notas',
 	},
 	{
 		nome: 'Lawyers',
 		techs: ['HTML', 'CSS', 'Bootstrap'],
-		img: '../public/assets/projetos/Lawyers.png',
+		img: lawyersImg,
 		deploy: 'https://abnersuhettdev.github.io/lawyers/',
 		repositorio: 'https://github.com/abnersuhettdev/lawyers',
 	},
 	{
 		nome: 'Calculadora',
 		techs: ['HTML', 'CSS', 'Javascript'],
-		img: '../public/assets/projetos/calculadora.png',
+		img: calculatorImg,
 		deploy: 'https://abnersuhettdev.github.io/Calculadora/',
 		repositorio: 'https://github.com/abnersuhettdev/Calculadora',
 	},

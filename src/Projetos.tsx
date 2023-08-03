@@ -1,5 +1,12 @@
 import { Container, Grid } from '@mui/material';
 
+import calculator from './assets/projetos/calculadora.png';
+import crudveiculos from './assets/projetos/crud-veiculos.png';
+import doItImg from './assets/projetos/do-it.png';
+import habits from './assets/projetos/habits.png';
+import homework from './assets/projetos/homework.png';
+import velha from './assets/projetos/jogo-da-velha.png';
+import lawyers from './assets/projetos/Lawyers.png';
 import { ProjectCard } from './components/Card';
 import { Navbar } from './components/Navbar';
 
@@ -7,49 +14,49 @@ const projetos = [
 	{
 		nome: 'Do It!',
 		techs: ['HTML', 'CSS', 'Javascript', 'GIT E GITHUB'],
-		img: '../public/assets/projetos/do-it.png',
+		img: doItImg,
 		deploy: 'https://abnersuhettdev.github.io/Criador-de-Notas/',
 		repositorio: 'https://github.com/abnersuhettdev/Criador-de-Notas',
 	},
 	{
 		nome: 'Lawyers',
 		techs: ['HTML', 'CSS', 'Bootstrap'],
-		img: '../public/assets/projetos/Lawyers.png',
+		img: lawyers,
 		deploy: 'https://abnersuhettdev.github.io/lawyers/',
 		repositorio: 'https://github.com/abnersuhettdev/lawyers',
 	},
 	{
 		nome: 'Calculadora',
 		techs: ['HTML', 'CSS', 'Javascript'],
-		img: '../public/assets/projetos/calculadora.png',
+		img: calculator,
 		deploy: 'https://abnersuhettdev.github.io/Calculadora/',
 		repositorio: 'https://github.com/abnersuhettdev/Calculadora',
 	},
 	{
 		nome: 'Jogo da Velha',
 		techs: ['HTML', 'CSS', 'Javascript'],
-		img: '../public/assets/projetos/jogo-da-velha.png',
+		img: velha,
 		deploy: 'https://abnersuhettdev.github.io/Jogo-da-Velha/',
 		repositorio: 'https://github.com/abnersuhettdev/Jogo-da-Velha',
 	},
 	{
 		nome: 'Habits',
 		techs: ['HTML', 'CSS', 'Javascript'],
-		img: '../public/assets/projetos/habits.png',
+		img: habits,
 		deploy: 'https://abnersuhettdev.github.io/NLWSetup-2023/',
 		repositorio: 'https://github.com/abnersuhettdev/NLWSetup-2023',
 	},
 	{
 		nome: 'Homework',
 		techs: ['HTML', 'CSS', 'Bootstrap', 'Javascript'],
-		img: '../public/assets/projetos/homework.png',
+		img: homework,
 		deploy: 'https://abnersuhettdev.github.io/Homework/',
 		repositorio: 'https://github.com/abnersuhettdev/Homework',
 	},
 	{
 		nome: 'Sistema de crud de Veículos',
 		techs: ['HTML', 'CSS', 'Javascript'],
-		img: '../public/assets/projetos/crud-veiculos.png',
+		img: crudveiculos,
 		deploy: 'https://abnersuhettdev.github.io/Sistema-de-CRUD-de-veiculos/',
 		repositorio:
 			'https://github.com/abnersuhettdev/Sistema-de-CRUD-de-veiculos',
